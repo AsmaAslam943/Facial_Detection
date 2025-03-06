@@ -17,32 +17,44 @@ Python 3.7 or higher
 A virtual environment (optional, but recommended)
 pip (Python package manager) for installing dependencies
 A webcam or an image file for face detection
-Libraries and Tools
+# Libraries and Tools
 The project uses the following libraries:
 
 face_recognition: A simple face recognition library that provides high-level APIs for face detection, recognition, and manipulation.
 OpenCV: A popular computer vision library that allows image and video processing.
 dlib: A toolkit for machine learning and computer vision, including face recognition.
 numpy: For numerical operations and array manipulations.
-Installation
+
+# Installation
+
 Follow the steps below to set up the project environment and install necessary dependencies.
 
 Step 1: Clone the Repository
 Clone the repository to your local machine using Git:
 
 bash
+
 Copy
+
 git clone https://github.com/yourusername/facial-recognition-project.git
+
 cd facial-recognition-project
+
 Step 2: Set Up Virtual Environment (Optional)
+
 It is recommended to use a virtual environment to avoid conflicts with other Python projects. You can set up a virtual environment as follows:
 
 For macOS/Linux:
 bash
+
 Copy
+
 python3 -m venv .venv
+
 source .venv/bin/activate
+
 For Windows:
+
 bash
 Copy
 python -m venv .venv
@@ -72,7 +84,7 @@ Copy
 python main.py
 If everything is installed correctly, it should output a confirmation like "Face detected!" or "No faces found," depending on the input provided.
 
-Usage
+# Usage
 The facial recognition system can be used with both images and video streams. Below are instructions on how to use the system in different contexts.
 
 Detect Faces from an Image
@@ -88,7 +100,7 @@ Copy
 python detect_faces.py --image ./images/sample_face.jpg
 This will detect faces in the image and display the results in a window. If faces are detected, they will be outlined with bounding boxes.
 
-Real-Time Face Detection from Video Stream
+# Real-Time Face Detection from Video Stream
 For real-time face detection using your webcam, run the following command:
 
 bash
